@@ -5,6 +5,11 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@100&display=swap');
 
+.tittle-header:hover{
+    transition: all 3s;
+    overflow: hidden;
+    transform: scale(1.5);
+}
 .tittle-header{
     display: flex;
     background-image: url(../images/carroussel-2.jpg);
@@ -43,6 +48,10 @@
 .img-card{
     margin:5px;
 }
+.text-main:hover{
+    transition: all 2s;
+    transform: scale(1.5);
+}
 .text-main{
     display: flex;
     flex-direction: column;
@@ -60,12 +69,17 @@
     font-size:35px;
     color: whitesmoke;
 }
+.text-main2:hover{
+    transition: all 2s;
+    transform: scale(1.5);
+}
 .text-main2{
     display: flex;
     flex-direction: column;
     margin: 10px;
     align-items: center;
     background-image: url(../images/empa-3.jpg);
+
     background-repeat: no-repeat;
     background-size: contain;
     height: 300px;
@@ -122,5 +136,20 @@
 .text-horarios{
     font-size: 20px;
 }
+.card-inicio:hover{
+   transition: all 3s;
+   transform: rotateY(360deg);
+}
+
+.nosotros-div:hover{
+    transition: all 3s;
+    transform:rotateX(360deg);
+}
+.contacto-div:hover{
+    transition: all 3s;
+    transform: rotateY(360deg);
+}
+
+
 
 
