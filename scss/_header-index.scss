@@ -1,0 +1,19 @@
+.tittle-header {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    h1 h2{
+        background-image: url(../images/carroussel-2.jpg);
+        background-repeat: no-repeat;
+        color: rgb(23, 26, 26);
+        margin-top: 10px;
+        font-size: 30px;
+        &:hover{
+            transition: all 3s;
+            overflow: hidden;
+            transform: scale(1.5);
+        }
+    }
+}
+
