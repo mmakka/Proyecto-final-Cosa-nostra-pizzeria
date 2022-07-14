@@ -1,141 +1,114 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Euphoria+Script&display=swap");
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
 
-@import"header"
-
-.contenedor-card {
-  display: flex;
-  padding: 15px;
-  margin: 15px;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.header-index {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-index .tittle-header {
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #252525;
+  font-size: 30px;
+}
+.header-index .tittle-header:hover {
+  transition: all 3s;
+  overflow: hidden;
+  transform: scale(1.5);
 }
 
-.card {
+.main-index {
+  display: flex;
+  text-align: start;
+  align-items: center;
+}
+.main-index .promo-destacada:hover {
+  transition: all 6s;
+  transform: rotateY(360deg);
+}
+.main-index .promo-destacada h3 {
+  font-family: "Poppins", sans-serif;
+  color: pink;
+  font-size: 50px;
+}
+.main-index .promo-destacada p {
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+}
+.main-index .promo-destacada .button {
+  width: 100px;
+  background-color: pink;
+  border: 0px;
+  border-radius: 5px;
+  color: aliceblue;
   margin: 10px;
   padding: 10px;
-  border-radius: 40px;
+  font-size: 20px;
+}
+.main-index .promo-destacada .img-main-index {
+  border-radius: 20px;
 }
 
-.img-card {
+.info-aside {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #252525;
+}
+.info-aside .button-2 {
+  width: 100px;
+  background-color: pink;
+  border: 0px;
+  border-radius: 5px;
+  color: aliceblue;
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.text-footer {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.nosotros .h1 {
+  font-size: 50px;
+  font-family: "Great Vibes", cursive;
+}
+.nosotros .h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 60px;
+}
+.nosotros .img-nosotros {
+  border-radius: 50px;
+}
+.nosotros .text-nosotros {
+  color: #252525;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn, .btn-secundario, .btn-primario {
+  border: 0px;
+  border-radius: 15px;
   margin: 5px;
+  padding: 15px;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
 }
 
-.text-main:hover {
-  transition: all 2s;
-  transform: scale(1.5);
+.btn-primario {
+  background-color: #dfdcdc;
 }
 
-.text-main {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  align-items: center;
-  background-image: url(../images/section-1.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 300px;
-}
-
-.text-main a {
-  padding: 35px;
-  margin-top: 10px;
-  text-decoration: none;
-  font-size: 35px;
-  color: whitesmoke;
-}
-
-.text-main2:hover {
-  transition: all 2s;
-  transform: scale(1.5);
-}
-
-.text-main2 {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  align-items: center;
-  background-image: url(../images/empa-3.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 300px;
-}
-
-.text-main2 a {
-  margin-top: 10px;
-  padding: 35px;
-  text-decoration: none;
-  font-size: 25px;
-  color: whitesmoke;
-}
-
-.container-tarjetas {
-  display: flex;
-  justify-content: space-around;
-}
-
-.text-main-2 {
-  padding: 10px;
-  font-size: 25px;
-  color: black;
-  text-decoration: solid;
-}
-
-.card-text {
-  color: black;
-  font-size: 20px;
-  text-decoration: solid black;
-}
-
-.card-2 {
-  padding: 10px;
-  margin: 10px;
-  border-radius: 50%;
-}
-
-.card-body {
-  text-align: center;
-  background-color: azure;
-  margin: 10px;
-  padding: 10px;
-}
-
-.img-card2 {
-  margin: 20px;
-  padding: 20px;
-}
-
-.text-main-3 {
-  margin-top: 30px;
-  font-size: 35px;
-  text-decoration: solid black;
-  text-align: center;
-}
-
-.text-aside {
-  font-size: 25px;
-  text-decoration: solid;
-}
-
-.text-horarios {
-  font-size: 20px;
-}
-
-.card-inicio:hover {
-  transition: all 3s;
-  transform: rotateY(360deg);
-}
-
-.nosotros-div:hover {
-  transition: all 3s;
-  transform: rotateX(360deg);
-}
-
-.contacto-div:hover {
-  transition: all 3s;
-  transform: rotateY(360deg);
+.btn-secundario {
+  background-color: pink;
 }

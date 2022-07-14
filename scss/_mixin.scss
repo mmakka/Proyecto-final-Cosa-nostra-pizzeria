@@ -1,0 +1,5 @@
+@mixin propiedades-btn($ancho,$color-letra,$tamanio-letra){
+    width: $ancho;
+    color: $color-letra;
+    font-size: $tamanio-letra;
+}

@@ -1,19 +1,71 @@
-.tittle-header {
-    display: flex;
-    margin-top: 10px;
+.header-index{
+    background-image: url(../images/pizza-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+.tittle-header{
     flex-direction: column;
     align-items: center;
-    h1 h2{
-        background-image: url(../images/carroussel-2.jpg);
-        background-repeat: no-repeat;
-        color: rgb(23, 26, 26);
-        margin-top: 10px;
-        font-size: 30px;
-        &:hover{
-            transition: all 3s;
-            overflow: hidden;
-            transform: scale(1.5);
-        }
+    font-family: 'Poppins', sans-serif;
+    color: #252525;
+    font-size: 30px;
+&:hover{
+    transition: all 3s;
+    overflow: hidden;
+    transform: scale(1.5);
+}
+}
+}
+
+.main-index{
+    display: flex;
+    text-align:start;
+    align-items: center;
+.promo-destacada{
+    &:hover {
+        transition: all 6s;
+        transform: rotateY(360deg);
+      }
+    h3{
+        font-family: "Poppins", sans-serif;
+        color: pink;
+        font-size: 50px;
+    }
+    p{
+        font-size: 35px;
+        font-family: "Poppins", sans-serif;
+    }
+    .button{
+        width: 100px;
+        background-color:pink;
+        border: 0px;
+        border-radius: 5px;
+        color: aliceblue;
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px; 
+    }
+    .img-main-index{
+        border-radius: 20px;
     }
 }
+}
+    .info-aside{
+        text-align: center;
+        font-size: 30px;
+        font-family: "Poppins", sans-serif;
+        color:#252525;
+        .button-2{
+        width: 100px;
+        background-color:pink;
+        border: 0px;
+        border-radius: 5px;
+        color: aliceblue;
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px; 
+        }
+        
+    }
+
+
 
