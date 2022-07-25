@@ -1,0 +1,28 @@
+.body-promos{
+    
+    .header-promociones{
+    padding: 150px;
+    background-image: url(../../images/header-promociones.jpg);
+    background-size:cover;
+    border-radius: 15px;
+    height: auto;
+    background-repeat: no-repeat;
+    .tittle-promo{
+        font-size: 25px;
+        font-family: 'Great Vibes', cursive;
+        color:whitesmoke;
+        justify-content: start;
+        text-decoration: overline;
+        .tarjetas-container{
+        display: flex;
+        .tarjeta-promo{
+        text-decoration: solid black;
+        .img-card-promo{
+            border-radius: 50px;
+            
+        }
+    }
+    }
+}
+}
+}

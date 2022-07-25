@@ -7,7 +7,7 @@
     <meta name="description" content="Menu,pizzas,empanadas,sabores,gustos">
      <!-- CSS only -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-     <link rel="stylesheet" href="../asset/style.css">
+     <link rel="stylesheet" href="../asset/css/style.css">
     <title>Nuestro Menu</title>
 </head>
 <body class="container">
@@ -35,102 +35,40 @@
       </div>
     </div>
   </nav>
-      <header>
+  
+      <header class="menu-header">
         <h1 class="text-center">Nuestro Menu</h1>
       </header>
-      <main class="row d-flex">
-        <h2 class="align-items-center bg-light">Nuestras empanadas</h2>
-        <ol class="list-group list-group-numbered col-8 m-4 d-flex justify-content-between">
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">carne</div>
-              Descripcion
+      <main>
+        <div class="row mt-1 container-menu">
+
+          <div class="col-6">
+            <h3> Nuestras pizzas</h3>
+            <ul>
+              <li>Muzarella</li>
+              <li>Napolitana</li>
+              <li>Calabresa</li>
+              <li>Fugazza</li>
+              <li>Jamon y Morrones</li>
+              <li>Cuatro quesos</li>
+              <li>Provolone</li>
+            </ul>
+          </div>
+            <div class="col-6">
+              <h3>Nuestras empanadas</h3>
+              <ul>
+                <li>Carne</li>
+                <li>Pollo</li>
+                <li>Jamon y queso</li>
+                <li>Roquefort</li>
+                <li>Capresse</li>
+                <li>Napolitana</li>
+                <li>Humita</li>
+              </ul>
             </div>
-            <span class="badge bg-primary rounded-pill">1</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Pollo</div>
-              Descripcion
-            </div>
-            <span class="badge bg-primary rounded-pill">2</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Napolitana</div>
-              Descripcion
-            </div>
-            <span class="badge bg-primary rounded-pill">3</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Humita</div>
-              Descripcion
-            </div>
-            <span class="badge bg-primary rounded-pill">4</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Capresse</div>
-              Descripcion
-            </div>
-            <span class="badge bg-primary rounded-pill">5</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Cebolla</div>
-              Descrpcion
-            </div>
-            <span class="badge bg-primary rounded-pill">6</span>
-          </li>
-        </ol>
-        <h2 class="d-flex bg-light">Nuestras pizzas</h2>
-        <ol class="list-group list-group-numbered col-8 m-4">
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold"> Pizza Muzarella</div>
-              Descripcion
-            </div>
-            <span class="badge bg-primary rounded-pill">1</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold"> Pizza Cuatro quesos</div>
-              Descripcion
-            </div>
-            <span class="badge bg-primary rounded-pill">2</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold"> Pizza Roquefort</div>
-              Descripcion
-            </div>
-            <span class="badge bg-primary rounded-pill">3</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Pizza Morron</div>
-              Descripcion
-            </div>
-            <span class="badge bg-primary rounded-pill">4</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold"> Pizza Calabresa</div>
-              Descripcion
-            </div>
-            <span class="badge bg-primary rounded-pill">5</span>
-          </li>
- 
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Pizza Fugazza</div>
-              Descrpcion
-            </div>
-            <span class="badge bg-primary rounded-pill">6</span>
-          </li>
-        </ol>
+        </div>
       </main>
+      
       <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-light p-5">
           <div class="col-md-4 d-flex align-items-center">

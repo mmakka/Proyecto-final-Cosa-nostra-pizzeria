@@ -8,6 +8,50 @@
 @import"nosotros"; 
 @import"variables";
 @import"mixin";
+@import"promos";
+@import"contacto";
+
+.menu-header{
+    background-color: #252525;
+    padding: 150px;
+    h1{
+        font-size: 60px;
+        font-family: 'Great Vibes', cursive;
+        color: whitesmoke;
+    }
+}
+.container-menu{
+    
+    font-family: 'Poppins', sans-serif;
+    background-color: #252525;
+    font-size: 20px;
+    color: whitesmoke;
+    h3{ 
+        margin-top: 15px;
+        font-family: 'Great Vibes', cursive;
+        font-size: 50px;
+    }
+    ul{
+        text-decoration: none;
+        list-style: none;
+        padding: 30px;
+        li{
+            padding:15px;
+            font-size: 25px;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .btn {
@@ -17,7 +61,6 @@
     padding:map-get($btn , padding);
     @include propiedades-btn(100%,#fff,18px)
     }
-
 
 @each $key, $var in $colores {
     .btn-#{$key}{

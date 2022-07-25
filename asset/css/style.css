@@ -8,15 +8,17 @@
 }
 
 .header-index {
-  background-repeat: no-repeat;
+  background-image: url(../../images/index-titulo.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .header-index .tittle-header {
-  flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  text-decoration: overline;
+  padding: 200px;
+  margin: 0px 0px 20px 0px;
   font-family: "Poppins", sans-serif;
-  color: #252525;
-  font-size: 30px;
+  color: #e8e7e7;
 }
 .header-index .tittle-header:hover {
   transition: all 3s;
@@ -26,43 +28,83 @@
 
 .main-index {
   display: flex;
-  text-align: start;
-  align-items: center;
+}
+.main-index .promos-3 {
+  padding: 10px;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #252525;
+}
+.main-index .promos-3 h3 {
+  padding: 10px;
+  background-color: pink;
+  font-size: 30px;
 }
 .main-index .promo-destacada:hover {
   transition: all 6s;
   transform: rotateY(360deg);
 }
-.main-index .promo-destacada h3 {
+.main-index .promo-destacada .tittle-promo-index {
+  flex-direction: column;
+  align-items: center;
+}
+.main-index .promo-destacada .tittle-promo-index h3 {
   font-family: "Poppins", sans-serif;
   color: pink;
-  font-size: 50px;
+  font-size: 30px;
 }
-.main-index .promo-destacada p {
-  font-size: 35px;
+.main-index .promo-destacada .tittle-promo-index p {
+  font-size: 25px;
   font-family: "Poppins", sans-serif;
 }
-.main-index .promo-destacada .button {
-  width: 100px;
+.main-index .promo-destacada .tittle-promo-index .img-promo-index {
+  border-radius: 50px;
+}
+.main-index .promo-destacada .tittle-promo-index .button {
+  width: 30%;
   background-color: pink;
   border: 0px;
   border-radius: 5px;
   color: aliceblue;
   margin: 10px;
   padding: 10px;
-  font-size: 20px;
-}
-.main-index .promo-destacada .img-main-index {
-  border-radius: 20px;
+  font-size: 10px;
 }
 
-.info-aside {
-  text-align: center;
-  font-size: 30px;
+.container-aside .info-aside {
+  border-radius: 30px;
   font-family: "Poppins", sans-serif;
+}
+.container-aside .info-aside h3 {
+  font-size: 20px;
   color: #252525;
 }
-.info-aside .button-2 {
+.container-aside .info-aside .button-2 {
+  width: 100px;
+  margin-bottom: auto;
+  margin-right: 5px;
+  background-color: pink;
+  border: 0px;
+  border-radius: 10px;
+  color: aliceblue;
+  padding: 5px;
+  font-size: 15px;
+}
+.container-aside .info-aside-2 {
+  font-size: 18px;
+  color: #252525;
+  font-family: "Poppins", sans-serif;
+}
+.container-aside .info-aside-2 h3 {
+  font-size: 25px;
+  background-color: pink;
+}
+.container-aside .info-aside-2 .pizza-aside-2 {
+  display: flex;
+  margin-left: 50px;
+  border-radius: 30px;
+}
+.container-aside .info-aside-2 .button {
   width: 100px;
   background-color: pink;
   border: 0px;
@@ -87,12 +129,96 @@
   font-size: 60px;
 }
 .nosotros .img-nosotros {
-  border-radius: 50px;
+  border-radius: 20%;
 }
 .nosotros .text-nosotros {
   color: #252525;
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
+}
+
+.body-promos .header-promociones {
+  padding: 150px;
+  background-image: url(../../images/header-promociones.jpg);
+  background-size: cover;
+  border-radius: 15px;
+  height: auto;
+  background-repeat: no-repeat;
+}
+.body-promos .header-promociones .tittle-promo {
+  font-size: 25px;
+  font-family: "Great Vibes", cursive;
+  color: whitesmoke;
+  justify-content: start;
+  text-decoration: overline;
+}
+.body-promos .header-promociones .tittle-promo .tarjetas-container {
+  display: flex;
+}
+.body-promos .header-promociones .tittle-promo .tarjetas-container .tarjeta-promo {
+  text-decoration: solid black;
+}
+.body-promos .header-promociones .tittle-promo .tarjetas-container .tarjeta-promo .img-card-promo {
+  border-radius: 50px;
+}
+
+.container-contacto {
+  font-family: "Poppins", sans-serif;
+}
+.container-contacto .contacto-div {
+  font-size: 20px;
+}
+.container-contacto .contacto-div h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 50px;
+}
+.container-contacto .container-peya {
+  border-radius: 10px;
+}
+.container-contacto .container-peya .p-contacto {
+  font-size: 20px;
+  color: #252525;
+}
+.container-contacto .container-peya .pya-img {
+  border-radius: 10px;
+}
+.container-contacto .text-info p {
+  font-size: 18px;
+  color: #252525;
+}
+.container-contacto .text-final h3 {
+  font-size: 20px;
+}
+
+.menu-header {
+  background-color: #252525;
+  padding: 150px;
+}
+.menu-header h1 {
+  font-size: 60px;
+  font-family: "Great Vibes", cursive;
+  color: whitesmoke;
+}
+
+.container-menu {
+  font-family: "Poppins", sans-serif;
+  background-color: #252525;
+  font-size: 20px;
+  color: whitesmoke;
+}
+.container-menu h3 {
+  margin-top: 15px;
+  font-family: "Great Vibes", cursive;
+  font-size: 50px;
+}
+.container-menu ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 30px;
+}
+.container-menu ul li {
+  padding: 15px;
+  font-size: 25px;
 }
 
 .btn, .btn-secundario, .btn-primario {

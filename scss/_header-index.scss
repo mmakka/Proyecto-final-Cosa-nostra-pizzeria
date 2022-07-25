@@ -1,13 +1,14 @@
 .header-index{
-    background-image: url(../images/pizza-4.jpg);
-    background-repeat: no-repeat;
+    background-image: url(../../images/index-titulo.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 .tittle-header{
-    flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+    text-decoration: overline;
+    padding: 200px;
+    margin: 0px 0px 20px 0px;
     font-family: 'Poppins', sans-serif;
-    color: #252525;
-    font-size: 30px;
+    color: #e8e7e7;
 &:hover{
     transition: all 3s;
     overflow: hidden;
@@ -16,56 +17,101 @@
 }
 }
 
+
 .main-index{
     display: flex;
-    text-align:start;
-    align-items: center;
-.promo-destacada{
+    .promos-3{
+        padding: 10px;
+        font-size: 30px;
+        font-family: "Poppins", sans-serif;
+        color: #252525;
+        h3{
+            padding: 10px;
+            background-color: pink;
+            font-size: 30px;
+        } 
+    }
+    .promo-destacada{
     &:hover {
         transition: all 6s;
         transform: rotateY(360deg);
-      }
+    }
+    .tittle-promo-index{
+        flex-direction: column;
+        align-items: center;
     h3{
         font-family: "Poppins", sans-serif;
         color: pink;
-        font-size: 50px;
+        font-size:30px;
     }
     p{
-        font-size: 35px;
+        font-size: 25px;
         font-family: "Poppins", sans-serif;
     }
+        .img-promo-index{
+            border-radius: 50px;
+        }
     .button{
-        width: 100px;
+        width: 30%;
         background-color:pink;
         border: 0px;
         border-radius: 5px;
         color: aliceblue;
         margin: 10px;
         padding: 10px;
-        font-size: 20px; 
+        font-size: 10px; 
     }
-    .img-main-index{
-        border-radius: 20px;
-    }
+    
 }
 }
+}
+.container-aside{
     .info-aside{
-        text-align: center;
-        font-size: 30px;
+        border-radius: 30px;
         font-family: "Poppins", sans-serif;
-        color:#252525;
+        h3{
+            font-size: 20px;
+            color:#252525;
+        }
         .button-2{
         width: 100px;
+        margin-bottom: auto;
+        margin-right: 5px;
         background-color:pink;
         border: 0px;
-        border-radius: 5px;
+        border-radius:10px;
         color: aliceblue;
-        margin: 10px;
-        padding: 10px;
-        font-size: 18px; 
+        padding: 5px;
+        font-size: 15px; 
         }
-        
     }
 
+    .info-aside-2{
+        font-size: 18px;
+        color:#252525;
+        font-family: "Poppins", sans-serif;
+        h3{
+            font-size:25px;
+            background-color: pink;
+        }
+        .pizza-aside-2{
+            display: flex;
+            margin-left: 50px;
+            border-radius:30px;
+        }
+        .button{
+            width: 100px;
+            background-color:pink;
+            border: 0px;
+            border-radius: 5px;
+            color: aliceblue;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px
+            
+        }
+
+    }
+}
 
 

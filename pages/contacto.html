@@ -7,10 +7,10 @@
     <meta name="description" content="ubicacion,contacto,email,telefono,horarios">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../asset/style.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
     <title>Contacto</title>
 </head>
-<body class="container">
+<body class="container container-contacto">
   <nav class="navbar navbar-expand-lg bg-light p-3">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html"><img src="../images/logo.jpg" alt="logo"></a>
@@ -36,14 +36,17 @@
     </div>
   </nav>
     <header>
-        <div class="row mt-5 contacto-div">
-        <h1 class="col-3 col-md-8 col-xl-4">Estamos</h1>
-        <h2 aria-colcount="col-3 col-md-8 col-xl-4">en contacto</h2>
+        <div class="row mt-5 d-flex contacto-div justify-content-center">
+          <div class="col-3 col-md-8 col-xl-12 text-center">
+        <h1 class="bg-light">Estamos</h1>
+        <h2>en contacto</h2>
+        <p>Nos importa tu opinion!
+          Dejanos tu comentario
+        </p>
       </div>
-    </header>
-    <main>
-      <div class="row justify-content-center mt-5">
-        <form class="col-8 bg-light">
+
+      <div class="col-6 col-xl-12">
+        <form class=" bg-light">
             <div class="mb-3 d-flex">
               <label for="exampleInputEmail1" class="form-label">Email </label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -60,17 +63,30 @@
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
-    </main>
+      </div>
+    </header>
     <aside>
-      <div class="row bg-light mt-5">
-        <h3 class="col-8 col-md-10 col-xl-10 m-5 text-horarios text-center">
-      Nuestros horarios son:
-      de Lunes a Jueves : 12:00 a 15:00 y de 19:00 a 23:00hs ,
-      Viernes y Sabados :12:0
-      0 a 15:00 y de 19:00 a 24:00hs,
-      Domingos y feriados de 19:00 a 23:00 hs
+      <div class="row bg-light container-peya mt-3">
+      <p class="col-11 p-contacto">No te preocupes! Si no estas dentro de nuestra zona ,podes realizar tu orden en :</p>
+      <div class="col-1">
+        <img src="../images/pya.jpg" alt="plataforma" class="img-fluid pya-img">
+      </div>
+      </div>
+      <div class="row bg-light mt-5 text-final">
+        <h3 class="col-12 col-md-10 col-xl-10 m-5  text-center">
+          Nuestros horarios son:
+          de Lunes a Jueves : 12:00 a 15:00 y de 19:00 a 23:00hs ,
+          Viernes y Sabados :12:0
+          0 a 15:00 y de 19:00 a 24:00hs,
+          Domingos y feriados de 19:00 a 23:00 hs
         </h3>
     </div>
+    <div class="row text-center text-info mt-2">
+      <p>Cualquier duda o consulta podes llamarnos al :4458-1963 o por wthatsapp al 1150161934.</p>
+      </div>
+      <div>
+        <i class="icofont-location-pin"><a href="https://goo.gl/maps/11HwrJrV6inW253F7">Ubicacion</a> </i>
+      </div>
     </aside>
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-light p-5">
