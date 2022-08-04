@@ -188,27 +188,62 @@
     color: $color-letra;
     font-size: $tamanio-letra;
 }*/
+/*HEADER*/
 .header-promociones {
-  background-image: url(../images/pizza-4.jpg);
+  background-image: url(/../images/header-promociones.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   height: 400px;
 }
 
 .tittle-promo {
-  font-size: 25px;
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tittle-promo h1 {
+  font-size: 75px;
   font-family: "Great Vibes", cursive;
-  color: whitesmoke;
-  justify-content: start;
+  color: #fff;
   text-decoration: overline;
 }
-.tittle-promo .tarjetas-container {
+.tittle-promo h2 {
+  font-size: 40px;
+  color: #fff;
+}
+
+/*FIN HEADER*/
+.tarjeta-promo {
   display: flex;
 }
-.tittle-promo .tarjetas-container .tarjeta-promo {
-  text-decoration: solid black;
+.tarjeta-promo .img-card-promo {
+  align-items: center;
 }
-.tittle-promo .tarjetas-container .tarjeta-promo .img-card-promo img {
+.tarjeta-promo .img-card-promo img {
   border-radius: 50px;
+}
+.tarjeta-promo .text-card h3 {
+  padding: 10px;
+  background-color: #ce5858;
+  font-size: 35px;
+  color: #fff;
+  border-radius: 15px;
+}
+.tarjeta-promo .text-card p {
+  font-size: 25px;
+  color: rgba(37, 37, 37, 0.1450980392);
+}
+.tarjeta-promo .text-card .boton-p {
+  display: flex;
+  justify-content: center;
+}
+.tarjeta-promo .text-card .boton-p .boton-promo {
+  background-color: #ce5858;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #fff;
 }
 
 .container-contacto {

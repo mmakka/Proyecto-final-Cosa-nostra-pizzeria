@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Promociones,descuentos,pizzas,empanadas,">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../asset/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Promociones de pizzas y empanadas</title>
 </head>
 <body class="container-fluid body-promos ">
@@ -35,30 +35,35 @@
     </div>
   </nav>
   <!--ACA COMIENZA HEADER-->
-        <header class="header-promociones mt-1 d-flex">
-          <div class="mt-2 tittle-promo row">
+        <header class="header-promociones d-flex">
+          <div class="tittle-promo">
             <h2>Nuestras</h2>
             <h1 >Promociones</h1>
           </div>
         </header>
         <!--ACA COMIENZA MAIN-->
-        <main>
-          <div class="tarjetas-container row m-3 d-flex justify-content-center">
-          <!--TARJETA-->
-          <div class="tarjeta-promo col-5 col-xl-8 m-1  bg-light">
-          <div class="ml-5 d-flex img-card-promo">
-          <img src="../images/pizza-4.jpg" alt="imagen-pizza" class="img-fluid p-2">
-          </div>
-              <div class="text-center p-2">
-              <h3>Nuestra Promo destacada</h3>
-              <p>Una muzarella mas 6 empanadas</p>
-              <button class="btn-primario">Ordenar</button>
+        <main class="container-fluid">
+          <!--tajeta destacada-->
+          <div class="tarjeta-destacada container-fluid row m-3 d-flex justify-content-center">
+          <div class="tarjeta-promo col-10 m-1 bg-light">
+            <div class="d-flex img-card-promo">
+              <img src="../images/pizza-4.jpg" alt="imagen-pizza" class="img-fluid p-2">
+              </div>
+              <div class="text-card p-2 ">
+              <h3 class="text-center">Nuestra Promo destacada</h3>
+              <p class="text-center">Esta es la promocion favorita de nuestros clientes:<br>Una muzarella mas 6 empanadas</p>
+              <div class="boton-p">
+              <button class="boton-promo">Ordenar</button>
             </div>
+              </div>
+          </div>
           </div>
 
-
-          <div class="tarjeta-promo col-5 col-xl-6 m-1 bg-light">
-          <div class=" m-1 ">
+          <!--TARJETAS-->
+          <div class="tarjetas container-fluid row justify-content-center mt-3 p-2">
+          <!--tarjeta-1-->
+          <div class="tarjeta-promo col-4 col-xl-5 bg-light m-2 p-2">
+          <div class=" img m-1 ">
           <img src="../images/pizza-4.jpg" alt="imagen-pizza" class="img-fluid img-card-promo p-2 ">
           </div>
               <div class=" text-center p-2">
@@ -67,8 +72,10 @@
               <button class="btn-primario">Ordenar</button>
             </div>
           </div>
-          <div class="tarjeta-promo col-5 col-xl-6 m-1 bg-light">
-          <div class=" m-1 ">
+
+          <!--tarjeta 2-->
+          <div class="tarjeta-promo col-4 col-xl-5 bg-light m-2 p-2">
+          <div class="img-2 m-1 ">
           <img src="../images/pizza-4.jpg" alt="imagen-pizza" class="img-fluid img-card-promo p-2 ">
           </div>
               <div class=" text-center p-2">
@@ -77,8 +84,11 @@
               <button class="btn-primario">Ordenar</button>
             </div>
           </div>
-          <div class="tarjeta-promo col-5 col-xl-6 m-1 bg-light">
-          <div class="m-1 ">
+          
+
+          <!--tarjeta 3-->
+          <div class="tarjeta-promo col-4 col-xl-5 bg-light m-2 p-2">
+          <div class="m-1 img-3 ">
           <img src="../images/pizza-4.jpg" alt="imagen-pizza" class="img-fluid img-card-promo p-2">
           </div>
               <div class="text-center p-2">
@@ -86,8 +96,21 @@
               <p>18 empanadas a eleccion</p>
               <button class="btn-primario">Ordenar</button>
             </div>
+          </div>
+            <!--TARJET 4-->
+          <div class="tarjeta-promo col-4 col-xl-5 bg-light m-2 p-2">
+          <div class="m-1 img-3 ">
+          <img src="../images/pizza-4.jpg" alt="imagen-pizza" class="img-fluid img-card-promo p-2">
+          </div>
+              <div class="text-center p-2">
+              <h3>Nuestra Promo 5</h3>
+              <p>18 empanadas a eleccion</p>
+              <button class="btn-primario">Ordenar</button>
+            </div>
+          </div>
+          </div>
         </main>
-          <div class="container">
+          <div class="container-fluid">
           <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-light p-5">
             <div class="col-md-4 d-flex align-items-center">
               <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">

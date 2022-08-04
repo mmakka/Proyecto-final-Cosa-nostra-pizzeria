@@ -1,25 +1,60 @@
-
+/*HEADER*/
     .header-promociones{
-    background-image: url(../images/pizza-4.jpg);
+    background-image: url(/../images/header-promociones.jpg);
     background-size:cover;
+    background-repeat: no-repeat;
     height:400px;
 }
     .tittle-promo{
-        font-size: 25px;
-        font-family: 'Great Vibes', cursive;
-        color:whitesmoke;
-        justify-content: start;
-        text-decoration: overline;
-        .tarjetas-container{
         display: flex;
-        .tarjeta-promo{
-        text-decoration: solid black;
-        .img-card-promo{
-            img{
-                border-radius: 50px;
-            }
+        margin: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        h1{
+            font-size: 75px;
+            font-family: 'Great Vibes', cursive;
+            color:#fff;
+            text-decoration: overline;
+        }
+        h2{
+            font-size:40px;
+            color: #fff;
+        }
     }
-    }
-}
-}
+/*FIN HEADER*/
 
+
+.tarjeta-promo {
+    display: flex;
+    .img-card-promo{
+        align-items:center;
+        img{
+            border-radius: 50px;
+        }
+    }
+    .text-card{
+        h3{
+            padding: 10px;
+            background-color:#ce5858;
+            font-size: 35px;
+            color:#fff;
+            border-radius: 15px;
+        }
+        p{
+            font-size: 25px;
+            color: #25252525;
+        }
+        .boton-p{
+            display: flex;
+            justify-content: center;
+        .boton-promo{
+            background-color:#ce5858 ;
+            color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            border: 1px solid #fff;
+        }
+    }
+        
+    }
+}
