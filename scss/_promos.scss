@@ -1,12 +1,9 @@
-.body-promos{
-    
+
     .header-promociones{
-    padding: 150px;
-    background-image: url(../../images/header-promociones.jpg);
+    background-image: url(../images/pizza-4.jpg);
     background-size:cover;
-    border-radius: 15px;
-    height: auto;
-    background-repeat: no-repeat;
+    height:400px;
+}
     .tittle-promo{
         font-size: 25px;
         font-family: 'Great Vibes', cursive;
@@ -18,11 +15,11 @@
         .tarjeta-promo{
         text-decoration: solid black;
         .img-card-promo{
-            border-radius: 50px;
-            
-        }
+            img{
+                border-radius: 50px;
+            }
     }
     }
 }
 }
-}
+

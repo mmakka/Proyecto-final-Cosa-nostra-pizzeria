@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Menu,pizzas,empanadas,sabores,gustos">
-     <!-- CSS only -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-     <link rel="stylesheet" href="../asset/css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../asset/css/style.css">
     <title>Nuestro Menu</title>
 </head>
-<body class="container">
+<body class="container-fluid">
+  <!--navbar-->
   <nav class="navbar navbar-expand-lg bg-light p-3">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html"><img src="../images/logo.jpg" alt="logo"></a>
+      <a class="navbar-brand" href="../index.html"><img src="../images/logo.jpg" alt="logo" class="w-50"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -35,27 +36,38 @@
       </div>
     </div>
   </nav>
-  
-      <header class="menu-header">
-        <h1 class="text-center">Nuestro Menu</h1>
+  <!--HEADER-->
+      <header class="container-fluid menu-header d-flex ">
+        <div class="container-fluid">
+        <h1>Nuestro Menu</h1>
+      </div>
       </header>
-      <main>
-        <div class="row mt-1 container-menu">
-
-          <div class="col-6">
-            <h3> Nuestras pizzas</h3>
+      <!--fin header-->
+      <!--ACA COMIENZA MAIN-->
+      <main class="container-fluid">
+        <div class="row container-menu">
+          <!--tarjeta 1-->
+          <div class="container col-6 pizzas d-flex ">
+            <div class="texto-container">
+            <h3 class="text-center"> Nuestras pizzas</h3>
             <ul>
-              <li>Muzarella</li>
-              <li>Napolitana</li>
-              <li>Calabresa</li>
-              <li>Fugazza</li>
-              <li>Jamon y Morrones</li>
-              <li>Cuatro quesos</li>
-              <li>Provolone</li>
+              <li>Muzarella<br>$ 950</li>
+              <li>Napolitana<br> $ 1199</li>
+              <li>Calabresa<br>$ 1449</li>
+              <li>Fugazza <br>$ 1249</li>
+              <li>Jamon y Morrones<br>$ 1399</li>
+              <li>Cuatro quesos<br>$1499</li>
+              <li>Provolone<br>$1499</li>
             </ul>
           </div>
-            <div class="col-6">
-              <h3>Nuestras empanadas</h3>
+          <div class="container img d-flex">
+            <img class="img-fluid"  src="../images/pizza-menu.jpg" alt="pizza pizzeria">
+          </div>
+        </div>
+          <!--tarjeta 2-->
+            <div class="container col-6 empanadas d-flex">
+              <div class="texto-container">
+              <h3>Nuestras<br> empanadas</h3>
               <ul>
                 <li>Carne</li>
                 <li>Pollo</li>
@@ -65,9 +77,23 @@
                 <li>Napolitana</li>
                 <li>Humita</li>
               </ul>
+              <p>Docena de empanadas<br>$ 1599</p>
+              <p>Media docena de empanadas<br>$ 799</p>
+              <p>Empanada por unidad<br> $ 150</p>
+            </div>
+            <div class="img-empa">
+              <img class="img-fluid" src="../images/menu-empa.jpg" alt="empanadas comida">
             </div>
         </div>
+        </div>
       </main>
+      <!--fin main-->
+      <!--ASIDE-->
+      <aside class="aside-menu">
+        <h3>Si queres quitar o agregar algun ingrediente a tu pizza no dudes en consultarnos!</h3>
+      </aside>
+      <!--fin aside-->
+
       
       <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-light p-5">

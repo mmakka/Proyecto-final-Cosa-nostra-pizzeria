@@ -6,92 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="pizzas,empanadas,envios,pizzeria,Ituzaingo,Buenos aires">
     <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/bootstrap.css">
+    <link rel="stylesheet" href="./scss/boostrap/bootstrap.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Pizzeria Cosa Nostra</title>
 </head>
-<body class="container">
+<body class="container-fluild">
+      <!--navbar-->
       <nav class="navbar navbar-expand-lg bg-light p-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./images/logo.jpg" alt="logo"></a>
+          <a class="navbar-brand" href="../index.html"><img src="../images/logo.jpg" alt="logo" class="w-50"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="./pages/promociones.html">Promociones</a>
+                <a class="nav-link" href="./promociones.html">Promociones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/menu.html">Menu</a>
+                <a class="nav-link" href="./menu.html">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <header class="row header-index mt-1 d-flex">
-        <div class="tittle-header col-12">
+      
+      <!--ACA COMIENZA HEADER-->
+      <header class="header-index mt-1 d-flex row">
+        <div class="container tittle-header col-12 text-center">
           <h1>Cosa Nostra</h1>
           <h2>Pizzas y empanadas</h2>
-          <button class="btn"><a href="./pages/menu.html">Menu</a></button>
+          <button class="botonn"><a href="./pages/menu.html">Menu</a></button>
         </div>
       </header>
-
-      <main class="main-index d-flex mt-1 row">
-
-        <div class="row">
-        <div class="col-12 text-center promos-3">
+      <!--FIN HEADER-->
+      
+      <main class="main-index row d-flex mt-1">
+        <!--SECTION 1 MAIN-->
+        <div class="container col-8 ">
+        <div class="text-center promos-index">
           <h3>Conoce nuestras Promociones</h3>
           <p>Nuestras promos se van actualizando mes a mes, siempre pensando en nuestros clientes</p>
         </div>
       </div>
+      <!--SECTION TARJETAS  MAIN-->
+        <div class="container-tarjetas-main  row d-flex justify-content-around">
+        <div class="promos-destacadas col-5 ">
+          <div class="tittle-promo-index text-center mt-2">
+          <h3>Promocion 1</h3>
+          <p>Dos<br> muzzarellas</p>
+        </div>
+          <div class="d-flex justify-content-center container-img-main">
+          <img src="./images/pizza-4.jpg" alt="imagen-pizza" class="imagen-main-index img-fluid">
+        </div>
+        <div class="container-boton-promo">
+          <button class="boton-promo p-1"><a href="./pages/promociones.html">Ver mas</a></button>
+        </div>
+        </div>
 
-        <div class="row justify-content-center d-flex ">
-        <div class="promo-destacada col-10 bg-light">
+        <div class="promos-destacadas mt-2  col-5 col-xs-3 col-xl-5 bg-light">
           <div class="tittle-promo-index text-center">
-          <h3>Nuestra Promo destacada del mes</h3>
-          <p>Una muzarella mas 6 empanadas</p>
+          <h3>Promocion 2</h3>
+          <p>Una muzarella <br>mas una Fugazza</p>
         </div>
-          <div class="d-flex justify-content-center container-img- p-5">
-          <img src="./images/pizza-4.jpg" alt="imagen-pizza" class="img-promo-index">
+          <div class="d-flex justify-content-center container-img-main">
+          <img src="./images/pizza-index-aside.jpg" alt="imagen-pizza" class="imagen-main-index img-fluid">
         </div>
-          <button class="btn p-3"><a href="./pages/promociones.html">Ver mas</a></button>
+        <div class="container-boton-promo">
+          <button class="boton-promo p-1"><a href="./pages/promociones.html">Ver mas</a></button>
+        </div>
         </div>
       </div>
+      <!--FIN MAIN-->
       </main>
 
-      <aside>
-        <div class="container-aside row d-flex mt-1">
-          <div class="col-10 col-xl-8 bg-light mt-1 info-aside-2">
-              <div>
-                <img src="./images/piza-index-aside.jpg" alt="pizza" class=" pizza-aside-2 p-3">
-              </div>
-              <h3>Sabias que podes ordenar tu pizza de dos sabores?</h3>
-              <p class="text-center"> Hace tu pizza a tu gusto, no te lo pierdas!</p>
-              <button class="btn"><a href="https://www.whatsapp.com/?lang=es">Ordenar</a></button>
+      <!--COMEINZA ASIDE-->
+      <aside class="mt-1 mt-2 ">
+
+      <div class=" row container-aside d-flex mt-1">
+        <div class=" col-xl-12 bg-light mt-1 info-aside-2">
+            <div>
+            <h3 class="text-center">Sabias que en Cosa Nostra podes ordenar tu pizza de dos sabores?</h3>
+            <p class="text-center"> Hace tu pizza a tu gusto, no te lo pierdas!</p>
             </div>
-
-          <div class="col-2 info-aside  mt-1 row col-md-7 m-5 d-flex justify-content-center col-xl-2">
-            <div class=" p-2 d-flex">
-              <img src="./images/delivery.gif" alt="imagen-moto" class="img-fluid img-gif">
-            </div>
-            <div class="text-center">
-            <h3 class="bg-light m-1 p-1 ">Envios sin cargo!
-                Consulta tu zona aqui.. </h3>
-                <button class="button-2 mt-3">Consultar</button>
-              </div>
-          </div>
-    </div> 
-
-
-    <main-2 class="row mt-1">
+        </div>
+        <!--CARROUSEL-->
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -100,7 +108,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active contaniner-titulo">
-            <img src="./images/carroussel-1.jpg" class="d-block w-100" alt="imagen-pizza">
+            <img src="./images/index-titulo.jpg" class="d-block w-100" alt="imagen-pizza">
           </div>
           <div class="carousel-item">
             <img src="./images/carroussel-2.jpg" class="d-block w-100" alt="imagen-empandas">
@@ -118,9 +126,53 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </main-2>
-      </aside>
-        <div class="container">
+      <!--FIN CARRUSEL-->
+    </aside>
+
+    <!--aca comienza ASIDE 2-->
+    <aside-2>
+      <div class="row mt-3 bg-light aside-2">
+        <div class="col-4 mt-1">
+          <div class="d-flex justify-content-center p-2">
+            <img class="img-fluid" src="./images/telefono.png" alt="telefono-llamar">
+          </div>
+          <div>
+            <h3 class="text-center">Hace tu orden <br>al 4458-1963</h3>
+          </div>
+        </div>
+        <div class="col-4 mt-1">
+          <div class="d-flex justify-content-center p-2">
+            <img class="img-fluid" src="./images/whatssap.png" alt="whatsapp">
+          </div>
+          <div>
+            <h3 class="text-center">Si tenes dudas o consultas<br>Escribinos</h3>
+          </div>
+        </div>
+        <div class="col-4 mt-1 ">
+          <div class="p-2 d-flex justify-content-center">
+            <img src="./images/delivery.png" alt="imagen-moto" class="img-fluid">
+          </div>
+          <div>
+          <h3 class="text-center">Envios sin cargo!<br>
+              Consulta tu zona <a href="./pages/contacto.html"> aqui</a></h3>
+            </div>
+      </div>
+    </div>
+  </div>
+</aside-2>
+        <!--FIN aside-2-->
+        <!--Section final mercado pago-->
+      <section>
+      <div class="row mt-3 p-1">
+      <div class="d-flex justify-content-center">
+        <img class="img-fluid" src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/575X40.jpg" 
+        title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago" 
+        width="575" height="40"/>"
+      </div>
+    </div>
+  </section>
+<!--ACA COMIENZA FOOTER-->
+        <div>
           <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-4 border-top bg-light">
             <div class="col-md-4 d-flex align-items-center">
               <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
