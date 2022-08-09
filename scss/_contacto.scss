@@ -1,32 +1,133 @@
-.container-contacto{
-    font-family: "Poppins", sans-serif;
-.contacto-div{
-    font-size: 20px;
-    h2{
+.texto-formu{
+    justify-content: start;
+    
+    h1{
+        padding: 5px;
         font-family: 'Great Vibes', cursive;
-        font-size: 50px;
+        color:#ce5858 ;
+        font-size: 55px;
     }
-}
-.container-peya{
-    .p-contacto{
-        font-size: 20px;
+    h2{
+        font-size: 40px;
         color: #252525;
-    }
-    border-radius: 10px;
-    .pya-img{
-        border-radius:10px;
-    }
-    }
-    .text-info{
-        p{
-        font-size: 18px;
-        color: #252525;
+        font-family: "Poppins", sans-serif;
     }
 }
-.text-final{
-    h3{
-    font-size: 20px;
-}
-}
-}
+    .formu{
+        font-family: "Poppins", sans-serif;
+    }
+    .botons{
+        display: flex;
+        justify-content: center;
+        .botons-formu{
+            background-color: #ce5858;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            border: 0px;
+        }
+    }
+
+    .container-peya{
+        .p-contacto{
+            color: #fff;
+            background-color: #ce5858;
+            font-size: 22px;
+            border-radius: 5px;
+            padding: 8px;
+        }
+        .img-pya{
+            img{
+                border-radius: 20px;
+            }
+        }
+    }
+    .maps{
+        h3{
+            margin-top: 15px;
+            font-size: 25px;
+            font-family: "Poppins", sans-serif;
+        }
+    }
+    .final{
+        font-family: "Poppins", sans-serif;
+    }
+
+    @media(max-width:576px){
+        .texto-formu{
+            h1{
+                padding: 0px;
+                font-size:25px;
+            }
+            h2{
+                font-size: 20px;
+            }
+        }
+            .formu{
+                display: flex;
+            }
+            .botons{
+                display: flex;
+                justify-content: center;
+                .botons-formu{
+                    padding: 5px;
+                }
+            }
+            .container-peya{
+                .p-contacto{
+                    font-size:15px;
+                    padding: 4px;
+                }
+                .img-pya{
+                    img{
+                        display: none;
+                    }
+                }
+            }
+            .maps{
+                display: none;
+                h3{
+                    font-size: 15px;
+                }
+            }
+    }
+    @media(max-width:768px){
+        .texto-formu{
+            h1{
+                padding: 0px;
+                font-size:25px;
+            }
+            h2{
+                font-size: 20px;
+            }
+        }
+            .formu{
+                display: flex;
+            }
+            .botons{
+                display: flex;
+                justify-content: center;
+                .botons-formu{
+                    padding: 5px;
+                }
+            }
+            .container-peya{
+                .p-contacto{
+                    font-size:15px;
+                    padding: 4px;
+                }
+                .img-pya{
+                    display: none;
+                    img{
+                        display: none;
+                    }
+                }
+            }
+            .maps{
+                display: none;
+                h3{
+                    font-size: 15px;
+                }
+            }
+    }
 

@@ -22,9 +22,8 @@
         }
     }
 /*FIN HEADER*/
-
-
 .tarjeta-promo {
+    font-family: "Poppins", sans-serif;
     display: flex;
     .img-card-promo{
         align-items:center;
@@ -42,19 +41,190 @@
         }
         p{
             font-size: 25px;
-            color: #25252525;
+            color: #252525;
         }
         .boton-p{
             display: flex;
             justify-content: center;
         .boton-promo{
             background-color:#ce5858 ;
-            color: #fff;
             border-radius: 10px;
             padding: 15px;
             border: 1px solid #fff;
+            a{
+                font-size: 20px;
+                text-decoration: none;
+                color: #fff;
+            }
         }
     }
-        
     }
 }
+.tarjetas{
+.tarjeta-promo {
+    .img{
+        img{
+            border-radius: 30px;
+        }
+    }
+    .tarjeta-tittle{
+        h3{
+            font-size: 25px;
+            padding: 5px;
+            background-color:rgb(116, 184, 119 );
+            color:#fff;
+            border-radius: 5px;
+        }
+        p{
+            font: size 20px;
+            color: #252525;
+        }
+        .btnPromo{
+            border-radius: 10px;
+            padding: 10px;
+            background-color:rgb(116, 184, 119 );
+            border: 0px;
+            a{
+                text-decoration: none;
+                color:#fff;
+            }
+        }
+    }
+}
+}
+.comentario{
+    font-size: #252525;
+    font-family: "Poppins", sans-serif;
+}
+/*aca comienzan medias querys*/
+@media(max-width:576px){
+    .header-promociones{
+        height:200px;
+    }
+        .tittle-promo{
+            margin: 5px;
+            h1{
+                font-size: 35px;
+            }
+            h2{
+                font-size:20px;
+            }
+        }
+        .tarjeta-promo {
+            display: flex;
+            .img-card-promo{
+                display: none;
+                img{
+                    display: none;
+                }
+            }
+            .text-card{
+                h3{
+                    padding: 5px;
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .boton-promo{
+                    
+                    padding:5px;
+                    
+                    a{
+                        font-size: 10px;
+                    }
+                }
+            }
+            }
+            .tarjetas{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                .tarjeta-promo {
+                    .img{
+                        display: none;
+                        img{
+                            display: none;
+                        }
+                    }
+                    .tarjeta-tittle{
+                        h3{
+                            font-size: 15px;
+                            padding: 5px;
+                        }
+                        p{
+                            font: size 10px;
+                        }
+                    }
+                }
+                }
+        }
+
+        @media(max-width:768px){
+            .header-promociones{
+                height:200px;
+            }
+            .tittle-promo{
+                h1{
+                    font-size: 35px;
+                }
+                h2{
+                    font-size:20px;
+                }
+            }
+            .tarjeta-promo {
+                .img-card-promo{
+                    img{
+                        border-radius:15px;
+                    }
+                }
+                .text-card{
+                    h3{
+                        padding: 5px;
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                    .boton-p{
+                    .boton-promo{
+                        padding: 10px;
+                        a{
+                            font-size: 15px;
+                        }
+                    }
+                }
+                }
+            }
+            .tarjetas{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                .tarjeta-promo {
+                    .img{
+                        img{
+                            border-radius: 5px;
+                        }
+                    }
+                    .tarjeta-tittle{
+                        h3{
+                            font-size: 18px;
+                            padding: 5px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                        .btnPromo{
+                            padding: 5px;
+                            a{
+                                text-decoration: none;
+                                color:#fff;
+                            }
+                        }
+                    }
+                }
+                }
+        }
+    

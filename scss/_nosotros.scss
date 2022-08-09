@@ -7,6 +7,7 @@
     .h2{
         font-family: 'Great Vibes', cursive;
         font-size: 60px;
+        color:#b42a2a;;
     }
     .img-nosotros {
         border-radius:20%;
@@ -15,5 +16,23 @@
         color:#252525;
         font-size:20px ;
         font-family: 'Poppins', sans-serif;
+    }
+}
+@media(max-width:576px){
+    .nosotros{
+        .h1{
+            font-size: 30px;
+        }
+        .h2{
+            font-size: 30px;
+        }
+        .img-nosotros {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .text-nosotros{
+            font-size:10px ;
+        }
     }
 }

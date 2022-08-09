@@ -173,6 +173,7 @@
 .nosotros .h2 {
   font-family: "Great Vibes", cursive;
   font-size: 60px;
+  color: #b42a2a;
 }
 .nosotros .img-nosotros {
   border-radius: 20%;
@@ -183,6 +184,22 @@
   font-family: "Poppins", sans-serif;
 }
 
+@media (max-width: 576px) {
+  .nosotros .h1 {
+    font-size: 30px;
+  }
+  .nosotros .h2 {
+    font-size: 30px;
+  }
+  .nosotros .img-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nosotros .text-nosotros {
+    font-size: 10px;
+  }
+}
 /*@mixin propiedades-btn($ancho,$color-letra,$tamanio-letra){
     width: $ancho;
     color: $color-letra;
@@ -215,6 +232,7 @@
 
 /*FIN HEADER*/
 .tarjeta-promo {
+  font-family: "Poppins", sans-serif;
   display: flex;
 }
 .tarjeta-promo .img-card-promo {
@@ -232,7 +250,7 @@
 }
 .tarjeta-promo .text-card p {
   font-size: 25px;
-  color: rgba(37, 37, 37, 0.1450980392);
+  color: #252525;
 }
 .tarjeta-promo .text-card .boton-p {
   display: flex;
@@ -240,40 +258,271 @@
 }
 .tarjeta-promo .text-card .boton-p .boton-promo {
   background-color: #ce5858;
-  color: #fff;
   border-radius: 10px;
   padding: 15px;
   border: 1px solid #fff;
 }
+.tarjeta-promo .text-card .boton-p .boton-promo a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
 
-.container-contacto {
+.tarjetas .tarjeta-promo .img img {
+  border-radius: 30px;
+}
+.tarjetas .tarjeta-promo .tarjeta-tittle h3 {
+  font-size: 25px;
+  padding: 5px;
+  background-color: rgb(116, 184, 119);
+  color: #fff;
+  border-radius: 5px;
+}
+.tarjetas .tarjeta-promo .tarjeta-tittle p {
+  font: size 20px;
+  color: #252525;
+}
+.tarjetas .tarjeta-promo .tarjeta-tittle .btnPromo {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(116, 184, 119);
+  border: 0px;
+}
+.tarjetas .tarjeta-promo .tarjeta-tittle .btnPromo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.comentario {
+  font-size: #252525;
   font-family: "Poppins", sans-serif;
 }
-.container-contacto .contacto-div {
-  font-size: 20px;
+
+/*aca comienzan medias querys*/
+@media (max-width: 576px) {
+  .header-promociones {
+    height: 200px;
+  }
+  .tittle-promo {
+    margin: 5px;
+  }
+  .tittle-promo h1 {
+    font-size: 35px;
+  }
+  .tittle-promo h2 {
+    font-size: 20px;
+  }
+  .tarjeta-promo {
+    display: flex;
+  }
+  .tarjeta-promo .img-card-promo {
+    display: none;
+  }
+  .tarjeta-promo .img-card-promo img {
+    display: none;
+  }
+  .tarjeta-promo .text-card h3 {
+    padding: 5px;
+    font-size: 15px;
+  }
+  .tarjeta-promo .text-card p {
+    font-size: 15px;
+  }
+  .tarjeta-promo .text-card .boton-promo {
+    padding: 5px;
+  }
+  .tarjeta-promo .text-card .boton-promo a {
+    font-size: 10px;
+  }
+  .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarjetas .tarjeta-promo .img {
+    display: none;
+  }
+  .tarjetas .tarjeta-promo .img img {
+    display: none;
+  }
+  .tarjetas .tarjeta-promo .tarjeta-tittle h3 {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .tarjetas .tarjeta-promo .tarjeta-tittle p {
+    font: size 10px;
+  }
 }
-.container-contacto .contacto-div h2 {
+@media (max-width: 768px) {
+  .header-promociones {
+    height: 200px;
+  }
+  .tittle-promo h1 {
+    font-size: 35px;
+  }
+  .tittle-promo h2 {
+    font-size: 20px;
+  }
+  .tarjeta-promo .img-card-promo img {
+    border-radius: 15px;
+  }
+  .tarjeta-promo .text-card h3 {
+    padding: 5px;
+    font-size: 20px;
+  }
+  .tarjeta-promo .text-card p {
+    font-size: 15px;
+  }
+  .tarjeta-promo .text-card .boton-p .boton-promo {
+    padding: 10px;
+  }
+  .tarjeta-promo .text-card .boton-p .boton-promo a {
+    font-size: 15px;
+  }
+  .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarjetas .tarjeta-promo .img img {
+    border-radius: 5px;
+  }
+  .tarjetas .tarjeta-promo .tarjeta-tittle h3 {
+    font-size: 18px;
+    padding: 5px;
+  }
+  .tarjetas .tarjeta-promo .tarjeta-tittle p {
+    font-size: 15px;
+  }
+  .tarjetas .tarjeta-promo .tarjeta-tittle .btnPromo {
+    padding: 5px;
+  }
+  .tarjetas .tarjeta-promo .tarjeta-tittle .btnPromo a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.texto-formu {
+  justify-content: start;
+}
+.texto-formu h1 {
+  padding: 5px;
   font-family: "Great Vibes", cursive;
-  font-size: 50px;
+  color: #ce5858;
+  font-size: 55px;
 }
-.container-contacto .container-peya {
-  border-radius: 10px;
-}
-.container-contacto .container-peya .p-contacto {
-  font-size: 20px;
+.texto-formu h2 {
+  font-size: 40px;
   color: #252525;
-}
-.container-contacto .container-peya .pya-img {
-  border-radius: 10px;
-}
-.container-contacto .text-info p {
-  font-size: 18px;
-  color: #252525;
-}
-.container-contacto .text-final h3 {
-  font-size: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
+.formu {
+  font-family: "Poppins", sans-serif;
+}
+
+.botons {
+  display: flex;
+  justify-content: center;
+}
+.botons .botons-formu {
+  background-color: #ce5858;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+}
+
+.container-peya .p-contacto {
+  color: #fff;
+  background-color: #ce5858;
+  font-size: 22px;
+  border-radius: 5px;
+  padding: 8px;
+}
+.container-peya .img-pya img {
+  border-radius: 20px;
+}
+
+.maps h3 {
+  margin-top: 15px;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.final {
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 576px) {
+  .texto-formu h1 {
+    padding: 0px;
+    font-size: 25px;
+  }
+  .texto-formu h2 {
+    font-size: 20px;
+  }
+  .formu {
+    display: flex;
+  }
+  .botons {
+    display: flex;
+    justify-content: center;
+  }
+  .botons .botons-formu {
+    padding: 5px;
+  }
+  .container-peya .p-contacto {
+    font-size: 15px;
+    padding: 4px;
+  }
+  .container-peya .img-pya img {
+    display: none;
+  }
+  .maps {
+    display: none;
+  }
+  .maps h3 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .texto-formu h1 {
+    padding: 0px;
+    font-size: 25px;
+  }
+  .texto-formu h2 {
+    font-size: 20px;
+  }
+  .formu {
+    display: flex;
+  }
+  .botons {
+    display: flex;
+    justify-content: center;
+  }
+  .botons .botons-formu {
+    padding: 5px;
+  }
+  .container-peya .p-contacto {
+    font-size: 15px;
+    padding: 4px;
+  }
+  .container-peya .img-pya {
+    display: none;
+  }
+  .container-peya .img-pya img {
+    display: none;
+  }
+  .maps {
+    display: none;
+  }
+  .maps h3 {
+    font-size: 15px;
+  }
+}
 .menu-header {
   background-image: url(/../images/pizza-header-menu.jpg);
   background-repeat: no-repeat;
